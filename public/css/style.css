@@ -1,0 +1,1399 @@
+@font-face {
+    font-family: 'Yekan';
+    src: url('http://localhost:3000/font/iranyekanwebbold.ttf');
+}
+
+* {
+    font-family: Yekan;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    background: url(http://localhost:3000/image/1.jpg);
+    scroll-behavior: smooth;
+}
+
+.circle1 {
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #00c0ff;
+    filter: saturate(300%);
+    border-radius: 50%;
+    pointer-events: none;
+    position: absolute;
+    transition: border-width 100ms;
+}
+
+
+
+/* NavBar */
+
+.amir-style {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home1 {
+    color: #00c0ff;
+    transition: 200ms;
+    text-decoration: none;
+}
+
+
+.line1,
+.line2,
+.line3 {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition: all 300ms;
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+.home:hover {
+    color: #00c0ff;
+}
+
+.home-color-white {
+    color: #ffff;
+}
+
+.home-color-blue {
+    color: #00c0ff;
+    transition: 200ms;
+    text-decoration: none;
+}
+
+.home2 {
+    color: rgb(255, 255, 255);
+    transition: 200ms;
+    text-decoration: none;
+}
+
+.home2:hover {
+    color: #00c0ff;
+}
+
+.home3 {
+    color: rgb(255, 255, 255);
+    transition: 200ms;
+    text-decoration: none;
+}
+
+.home3:hover {
+    color: #00c0ff;
+}
+
+.home4 {
+    color: rgb(255, 255, 255);
+    transition: 200ms;
+    text-decoration: none;
+}
+
+.home4:hover {
+    color: #00c0ff;
+}
+
+.home5 {
+    color: rgb(255, 255, 255);
+    transition: 200ms;
+    text-decoration: none;
+}
+
+.home5:hover {
+    color: #00c0ff;
+}
+
+.icon-style {
+    color: rgb(255, 255, 255);
+    transition: 200ms;
+}
+
+.icon-style:hover {
+    color: #00c0ff;
+}
+
+
+.a-style {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 1.8em;
+    color: #00c0ff;
+}
+
+/*  End Of NavBar */
+
+
+
+
+/* Main */
+
+.main {
+    margin-top: 250px;
+}
+
+.amir {
+    margin-top: 70px;
+    font-size: 3.5em;
+}
+
+.amir span {
+    color: #00c0ff;
+}
+
+.fa-circle-xmark {
+    transition: all 300ms;
+
+}
+
+.fa-circle-xmark:hover {
+    color: red;
+}
+
+.web {
+    font-size: 2.5em;
+}
+
+.btn-amir {
+    position: relative;
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 45px;
+    background-color: #00c0ff;
+    color: white;
+    text-decoration: none;
+    transform: translateX(0.1px);
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.btn-amir::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: translateY(100%);
+    transition: transform 300ms ease;
+}
+
+.btn-amir:hover::before {
+    transform: translateX(0);
+}
+
+.btn-amir:hover {
+    color: black;
+}
+
+
+.anim-main-style {
+    animation-name: main;
+    animation-duration: 2s;
+}
+
+
+@keyframes main {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    from {
+        opacity: 0;
+        transform: translate3d(30px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(-25px, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(10px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    to {
+        transform: none;
+    }
+}
+
+.img-amir {
+    width: 350px;
+    transition: transform 0.3s ease;
+    animation-name: imgamir;
+    animation-duration: 2s;
+}
+
+@keyframes imgamir {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(-30px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(5px, 0, 0);
+    }
+
+    to {
+        transform: none;
+    }
+}
+
+
+
+
+/* End Main  */
+
+
+/* بخش مهارت ها */
+
+.fa-gear {
+    color: #00c0ff;
+}
+
+.fa-briefcase {
+    color: #00c0ff;
+}
+
+fa-gem {
+    color: #00c0ff;
+}
+
+div .card-style {
+    background-color: #3a2b71;
+}
+
+.card-title1 i {
+    padding-top: 50px;
+    padding-right: 60px;
+}
+
+.card-title2 {
+    padding-top: 50px;
+    padding-right: 60px;
+    font-size: 1.5em;
+}
+
+.card-text {
+    padding: 40px 60px;
+    font-size: 1.3em;
+
+}
+
+/* پایان بخش مهرات ها  */
+
+
+/* قسمت دباره ما */
+
+.about-me {
+    margin-top: 150px;
+    color: #00c0ff;
+    font-size: 2em;
+    text-align: center;
+}
+
+.about-dev1 {
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.about-dev2 {
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+div .about-text {
+    margin-top: 50px;
+}
+
+div .about-name {
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 0px 10px 10px 0px;
+}
+
+div .about-abbres {
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.about-pd {
+    padding: 7px;
+    margin: 10px;
+}
+
+.btn-cv {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 20px 60px;
+    border-radius: 45px;
+    background-color: #00c0ff;
+    color: white;
+    text-decoration: none;
+    transform: translateX(10px);
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.btn-doante {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 20px 60px;
+    border-radius: 45px;
+    background-color: #22ff00d5;
+    color: white;
+    text-decoration: none;
+    transform: translateX(10px);
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.btn-doante::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: translateY(100%);
+    transition: transform 300ms ease;
+}
+
+.btn-doante:hover::before {
+    transform: translateX(0);
+}
+
+.btn-doante:hover {
+    color: black;
+}
+
+.btn-cv::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: translateY(100%);
+    transition: transform 300ms ease;
+}
+
+.btn-cv:hover::before {
+    transform: translateX(0);
+}
+
+.btn-cv:hover {
+    color: black;
+}
+
+.about-img {
+    z-index: 0;
+    width: 380px;
+    height: 380px;
+    margin-right: 20%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.about-img2 {
+    z-index: 2;
+    margin-top: 300px;
+    margin-right: -50px;
+    position: absolute;
+    width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* پایان قسمت درباره ما */
+
+
+
+
+/* مهارت های برنامه نویسی */
+
+.maharat-1 {
+    margin-top: 150px;
+    color: #00c0ff;
+    font-size: 2em;
+    text-align: center;
+}
+
+.maharat-2 {
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.maharat-3 {
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.progres95 {
+    position: relative;
+    right: 73%;
+    color: #00c0ff;
+}
+
+.progres85 {
+    position: relative;
+    right: 66%;
+    color: #00c0ff;
+}
+
+.css {
+    margin-right: -50px;
+}
+
+.html {
+    margin-right: -50px;
+}
+
+.progres70 {
+    position: relative;
+    right: 55%;
+    color: #00c0ff;
+}
+
+.java {
+    margin-right: -50px;
+}
+
+.bootstrap {
+    margin-right: -50px;
+}
+
+.progres90 {
+    position: relative;
+    right: 70%;
+    color: #00c0ff;
+}
+
+.ui-ux {
+    margin-right: -50px;
+}
+
+.progres83 {
+    position: relative;
+    right: 51%;
+    color: #00c0ff;
+}
+
+
+.react {
+    margin-right: -50px;
+}
+
+.progres60 {
+    position: relative;
+    right: 48%;
+    color: #00c0ff;
+}
+
+.animate-progress95 {
+    animation: progress-animation95 2s ease-out forwards;
+}
+
+@keyframes progress-animation95 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+.animate-progress83 {
+    animation: progress-animation83 2s ease-out forwards;
+}
+
+@keyframes progress-animation83 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+.animate-progress85 {
+    animation: progress-animation85 2s ease-out forwards;
+}
+
+@keyframes progress-animation85 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+.animate-progress70 {
+    animation: progress-animation70 2s ease-out forwards;
+}
+
+@keyframes progress-animation70 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.animate-progress90 {
+    animation: progress-animation90 2s ease-out forwards;
+}
+
+@keyframes progress-animation90 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.animate-progress60 {
+    animation: progress-animation60 2s ease-out forwards;
+}
+
+@keyframes progress-animation60 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+/* پایان مهارت های برنامه نویسی */
+
+
+
+
+/* قسمت خدمات  */
+
+.card-text1 {
+    padding: 30px;
+}
+
+.card-text2 {
+    padding-bottom: 50px;
+}
+
+.fa-4x {
+    padding-top: 40px;
+}
+
+.fa-figma {
+    position: relative;
+}
+
+.card-laptop {
+    animation-name: laptop;
+    animation-duration: 2s;
+}
+
+
+.circle-card1,
+.circle-card2,
+.circle-card3,
+.circle-card4,
+.circle-card5,
+.circle-card6 {
+    position: relative;
+    z-index: -1;
+    background-color: #432D92;
+    margin: auto;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.translate-card {
+    transform: translate(45px, 45px);
+    transition: all 300ms;
+}
+
+@keyframes laptop {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.card-game {
+    animation-name: game;
+    animation-duration: 2s;
+}
+
+@keyframes game {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.card-web {
+    animation-name: web;
+    animation-duration: 2s;
+}
+
+@keyframes web {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.card-code {
+    animation-name: code;
+    animation-duration: 2s;
+}
+
+@keyframes code {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.card-users {
+    animation-name: users;
+    animation-duration: 2s;
+}
+
+@keyframes users {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.card-figma {
+    animation-name: figma;
+    animation-duration: 2s;
+}
+
+@keyframes figma {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+/* پایان قسمت خدمات  */
+
+
+
+
+/* بخش ارتباط با من  */
+
+.connectme-1 {
+    margin-top: 150px;
+    color: #00c0ff;
+    font-size: 2em;
+    text-align: center;
+}
+
+.connectme-2 {
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.loaction {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #00c0ff;
+    border-radius: 50%;
+}
+
+.loaction i {
+    position: absolute;
+    color: #ffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.form-connectme input {
+    font-size: 1.4em;
+    color: #635A7D;
+    background-color: transparent;
+    border: 1px solid #635A7D;
+    border-radius: 10px;
+    width: 50%;
+    height: 70px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.form-connectme textarea {
+    font-size: 1.4em;
+    color: #635A7D;
+    background-color: transparent;
+    border: 1px solid #635A7D;
+    border-radius: 10px;
+    width: 97%;
+    height: 200px;
+    padding: 15px;
+    margin: 10px;
+}
+
+
+
+.btn-connect {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 6px;
+    padding: 20px 60px;
+    border-radius: 45px;
+    border: none;
+    transform: translateX(0.1px);
+    background-color: #00c0ff;
+    color: white;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.btn-connect::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: translateY(100%);
+    transition: transform 300ms ease;
+}
+
+.btn-connect:hover::before {
+    transform: translateX(0);
+}
+
+.btn-connect:hover {
+    color: black;
+}
+
+.anim-connectme1 {
+    animation-name: connect1;
+    animation-duration: 2s;
+}
+
+@keyframes connect1 {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    from {
+        opacity: 0;
+        transform: translate3d(30px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(-25px, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(10px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    to {
+        transform: none;
+    }
+}
+
+.anim-connectme2 {
+    animation-name: connect2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: inherit;
+}
+
+@keyframes connect2 {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(-30px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(5px, 0, 0);
+    }
+
+    to {
+        transform: none;
+    }
+}
+
+
+/* پایان بخش ارتباط با من  */
+
+
+
+
+/* بخش خبر نامه */
+.khabar {
+    margin-top: 180px;
+    margin-bottom: 50px;
+    padding-left: 100px;
+}
+
+.khabarname {
+    background-color: #432D92;
+    border-radius: 10px;
+    padding-left: 90px;
+    padding-top: 85px;
+    padding-right: 90px;
+    padding-bottom: 80px;
+}
+
+.khabarname h6 {
+    color: #00c0ff;
+    font-size: 1.3em;
+}
+
+.khabarname h4 {
+    color: #ffff;
+    margin-top: 10px;
+    font-size: 2.5em;
+}
+
+.khabarname h5 {
+    margin-top: 10px;
+    color: #635A7D;
+    font-size: 1.3em;
+}
+
+.khabar-form {
+    display: flex;
+    margin-top: 55px;
+}
+
+.khabar-input {
+    background-color: #ffff;
+    border-radius: 0px 10px 10px 0px;
+    padding: 18.6px;
+    width: 100%;
+    border: 1px solid #ffff;
+}
+
+.khabar-input:focus {
+    outline: none;
+}
+
+.btn-khabar {
+    color: #ffff;
+    background-color: #00c0ff;
+    border-radius: 10px 0px 0px 10px;
+    padding: 20px;
+    border: 1px solid #00c0ff;
+}
+
+.khabar-text1 {
+    animation: khabar1 2s backwards;
+}
+
+@keyframes khabar1 {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.khabar-text2 {
+    animation: khabar2 2s backwards;
+}
+
+@keyframes khabar2 {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+/* پایان بخش خبر نامه */
+
+
+
+
+/* بخش پایانی سایت */
+
+.end h3 {
+    color: #635A7D;
+    font-size: 1.5em;
+}
+
+.end a {
+    color: #ffff;
+    font-size: 1.3em;
+    transition: 300ms;
+    text-decoration: none;
+}
+
+.end a:hover {
+    color: #00c0ff;
+}
+
+.end h2 {
+    font-size: 1.3em;
+    color: #635A7D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    .soisial-media {
+        opacity: 0;
+    }
+
+    .nav-style {
+        margin-top: 12px;
+    }
+
+    .navbar-expand-lg {
+        background-color: #1E1345;
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+    .img-amir {
+        margin-top: 50px;
+    }
+
+    .maharat {
+        margin-top: 250px;
+    }
+
+    .order1 {
+        order: 2;
+        text-align: center;
+    }
+
+    .order2 {
+        order: 1;
+    }
+
+    .circle1 {
+        display: none;
+        position: relative;
+    }
+
+    .about-dev1 {
+        font-size: 1.6em;
+    }
+
+    .about-dev2 {
+        font-size: 1.6em;
+    }
+
+    .maharat-1 {
+        font-size: 1.6em;
+    }
+
+    .maharat-2 {
+        font-size: 1.6em;
+    }
+
+    .connectme-1 {
+        font-size: 1.6em;
+    }
+
+    .connectme-2 {
+        font-size: 1.6em;
+    }
+
+    .maharat-3 {
+        font-size: 1.6em;
+    }
+
+    .about-img2 {
+        display: none;
+    }
+
+    .about-img {
+        margin-bottom: 40px;
+        margin-right: 0px;
+    }
+
+    div .about-name {
+        border-radius: 10px;
+    }
+
+    div .about-abbres {
+        border-radius: 10px;
+    }
+
+    .anim-main-style {
+        animation-name: newmain;
+        animation-duration: 2s;
+    }
+
+
+    @keyframes newmain {
+        from {
+            opacity: 0;
+            transform: translate3d(0, 30px, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    .img-amir {
+        animation-name: newimgamir;
+        animation-duration: 2s;
+    }
+
+    @keyframes newimgamir {
+        from {
+            opacity: 0;
+            transform: translate3d(0, 30px, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+
+    .anim-connectme1 {
+        animation-name: newconnect1;
+        animation-duration: 2s;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    @keyframes newconnect1 {
+        from {
+            opacity: 0;
+            transform: translate3d(0, 30px, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: none;
+        }
+
+    }
+
+
+    .anim-connectme2 {
+        animation-name: newconnect2;
+        animation-duration: 2s;
+    }
+
+    @keyframes newconnect2 {
+        from {
+            opacity: 0;
+            transform: translate3d(0, 30px, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    .end h3 {
+        color: #635A7D;
+        font-size: 1.2em;
+    }
+
+    .end a {
+        color: #ffff;
+        font-size: 1em;
+        transition: 300ms;
+        text-decoration: none;
+    }
+
+
+    .end h2 {
+        font-size: 1em;
+        color: #635A7D;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .amir {
+        font-size: 2.5em;
+    }
+
+    .web {
+        font-size: 2em;
+    }
+
+    .img-amir {
+        width: 250px;
+    }
+
+    .about-dev1 {
+        font-size: 1.4em;
+    }
+
+    .about-dev2 {
+        font-size: 1.4em;
+    }
+
+    .maharat-1 {
+        font-size: 1.5em;
+    }
+
+    .maharat-2 {
+        font-size: 1.5em;
+    }
+
+    .connectme-1 {
+        font-size: 1.5em;
+    }
+
+    .connectme-2 {
+        font-size: 1.5em;
+    }
+
+    .maharat-3 {
+        font-size: 1.5em;
+    }
+
+    card-text1 {
+        font-size: 1em;
+    }
+
+    .khabar-text1 {
+        animation: khabar1new 2s backwards;
+    }
+
+    @keyframes khabar1new {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 30px, 0);
+        }
+
+        100% {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    .khabar-text2 {
+        animation: khabar2new 2s backwards;
+    }
+
+    @keyframes khabar2new {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 30px, 0);
+        }
+
+        100% {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+
+    .khabarname {
+        background-color: #432D92;
+        border-radius: 10px;
+        padding-left: 20px;
+        padding-top: 85px;
+        padding-right: 20px;
+        padding-bottom: 80px;
+    }
+
+    .khabarname h6 {
+        font-size: 1em;
+    }
+
+    .khabarname h4 {
+        font-size: 1.7em;
+    }
+
+    .khabarname h5 {
+        font-size: 1em;
+    }
+
+    .end h3 {
+        color: #635A7D;
+        font-size: 0.8em;
+    }
+
+    .end a {
+        color: #ffff;
+        font-size: 0.7em;
+        transition: 300ms;
+        text-decoration: none;
+    }
+
+
+    .end h2 {
+        font-size: 0.7em;
+        color: #635A7D;
+    }
+
+}
