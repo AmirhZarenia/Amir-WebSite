@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 require('dotenv').config();
-const mongoose = require('mongoose');
 
 
 // ارسال کردن ایمیل
@@ -10,9 +9,6 @@ const nodemailer = require('nodemailer');
 const cors = require('cors');
 
 
-mongoose.connect('mongodb://localhost:27017/MyWebSite').
-    then(() => { console.log('connect to mongodb') }).
-    catch(() => { console.log('cloud not connect to mongodb') })
 
 global.config = require('./config');
 
