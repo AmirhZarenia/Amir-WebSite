@@ -31,15 +31,15 @@ app.post('/send-email', async (req, res) => {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: process.env.MYEMAIL,
-            pass: process.env.PASSWORDEMAIL
+            user: "ahzareniabizz@gmail.com",
+            pass: "ehxb fkql ekix ghdy"
         }
     });
 
     // تنظیمات ایمیل
     let mailOptions = {
         from: email,
-        to: process.env.MYEMAIL, // ایمیل مقصد (همان ایمیل شما)
+        to: "ahzareniabizz@gmail.com", // ایمیل مقصد (همان ایمیل شما)
         subject: subject,
         text: `
             نام: ${name}
