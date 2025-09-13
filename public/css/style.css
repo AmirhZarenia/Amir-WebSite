@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Yekan';
-    src: url('http://localhost:3000/font/iranyekanwebbold.ttf');
+    src: url('https://zareniaapp.liara.run//font/iranyekanwebbold.ttf');
 }
 
 * {
@@ -14,7 +14,7 @@
 
 
 body {
-    background: url(http://localhost:3000/image/1.jpg);
+    background: url(https://zareniaapp.liara.run//image/1.jpg);
     scroll-behavior: smooth;
 }
 
