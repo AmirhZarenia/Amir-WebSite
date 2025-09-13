@@ -39,7 +39,7 @@ app.post('/send-email', async (req, res) => {
     // تنظیمات ایمیل
     let mailOptions = {
         from: email,
-        to: process.env.MYEMAIL, // ایمیل مقصد (همان ایمیل شما)
+        to: "ahzareniabizz@gmail.com", // ایمیل مقصد (همان ایمیل شما)
         subject: subject,
         text: `
             نام: ${name}
