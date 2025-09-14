@@ -18,16 +18,20 @@ body {
     scroll-behavior: smooth;
 }
 
-.circle1 {
-    z-index: 2;
-    width: 40px;
-    height: 40px;
-    border: 5px solid #00c0ff;
-    filter: saturate(300%);
+/* Custom Cursor */
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ff6b9d;
     border-radius: 50%;
+    position: fixed;
     pointer-events: none;
-    position: absolute;
-    transition: border-width 100ms;
+    z-index: 9999;
+    transition: transform 0.1s ease, background 0.3s ease, border-color 0.3s ease;
+    background: rgba(255, 107, 157, 0.2);
+    left: 0;
+    top: 0;
+    will-change: transform;
 }
 
 
@@ -1135,10 +1139,10 @@ div .about-abbres {
         order: 1;
     }
 
-    .circle1 {
+.custom-cursor {
         display: none;
         position: relative;
-    }
+}
 
     .about-dev1 {
         font-size: 1.6em;
