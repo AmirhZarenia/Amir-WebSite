@@ -32,19 +32,68 @@ document.getElementById('contactForm').addEventListener('submit', function (even
 
 
 // طراحی اون توپی که به دنبال موس میره
-var circle = document.querySelector(".circle1");
+document.addEventListener('DOMContentLoaded', function () {
+    const cursor = document.querySelector('.custom-cursor');
+    let mouseX = 0;
+    let mouseY = 0;
+    let cursorX = 0;
+    let cursorY = 0;
+    let isHovering = false;
+    let cursorVisible = true;
 
-document.addEventListener('mousemove', (e) => {
-    circle.style.left = `${e.pageX}px`;
-    circle.style.top = `${e.pageY}px`;
+    // سرعت حرکت کرسر (ضریب: هرچه بیشتر باشد، سریعتر)
+    const speed = 0.7;
 
-    if (e.target.nodeName === "A" || e.target.nodeName === "BUTTON" || e.target.nodeName === "I") {
-        circle.style.borderWidth = "35px"
-        circle.style.opacity = "0.5"
-    } else {
-        circle.style.borderWidth = "5px"
-        circle.style.opacity = "1"
+    function animateCursor() {
+        // فاصله بین موقعیت فعلی و موقعیت موس
+        const dx = mouseX - cursorX;
+        const dy = mouseY - cursorY;
+
+        // حرکت با ضریب سرعت
+        cursorX += dx * speed;
+        cursorY += dy * speed;
+
+        // اعمال موقعیت جدید
+        cursor.style.transform = `translate(${cursorX}px, ${cursorY}px) scale(${isHovering ? 2 : 1})`;
+
+        requestAnimationFrame(animateCursor);
     }
+
+    animateCursor();
+
+    document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
+        if (!cursorVisible) {
+            cursor.style.opacity = '1';
+            cursorVisible = true;
+        }
+    });
+
+    document.addEventListener('mouseleave', () => {
+        cursor.style.opacity = '0';
+        cursorVisible = false;
+    });
+
+    document.addEventListener('mouseenter', () => {
+        cursor.style.opacity = '1';
+        cursorVisible = true;
+    });
+
+    const hoverElements = document.querySelectorAll('button, a, .card');
+    hoverElements.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            isHovering = true;
+            cursor.style.background = 'rgba(255, 107, 157, 0.1)';
+            cursor.style.borderColor = '#ff6b9d';
+        });
+        el.addEventListener('mouseleave', () => {
+            isHovering = false;
+            cursor.style.background = 'rgba(255, 107, 157, 0.2)';
+            cursor.style.borderColor = '#ff6b9d';
+        });
+    });
 });
 
 
