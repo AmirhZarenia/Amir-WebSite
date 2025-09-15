@@ -97,6 +97,20 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// loading Screen
+document.body.classList.add('no-scroll');
+document.addEventListener('DOMContentLoaded', function () {
+    // Hide loading screen
+    setTimeout(() => {
+        document.getElementById('loadingScreen').style.opacity = '0';
+        setTimeout(() => {
+            document.getElementById('loadingScreen').remove();
+            document.body.classList.remove('no-scroll');
+        }, 500);
+    }, 4000);
+})
+
+
 
 const toastTrigger = document.getElementById('liveToastBtn')
 const toastLiveExample = document.getElementById('liveToast')
