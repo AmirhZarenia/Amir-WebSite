@@ -52,7 +52,7 @@ app.post('/send-email', async (req, res) => {
 
     try {
         await transporter.sendMail(mailOptions);
-        res.status(200).send('ایمیل با موفقیت ارسال شد');
+        res.status(200).send('ایمیل با موفقیت ارسال شد لطفا منتظر پاسخ باشید');
     } catch (error) {
         console.error('Error sending email: ', error);
         res.status(500).send('خطا در ارسال ایمیل');
