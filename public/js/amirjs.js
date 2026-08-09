@@ -12,7 +12,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     };
 
     // ارسال داده‌ها به سرور
-    fetch('https://zareniaapp.liara.run/send-email', {
+    fetch('https://amir-website.onrender.com/send-email', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
