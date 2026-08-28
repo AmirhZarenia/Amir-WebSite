@@ -22,6 +22,18 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
+app.use(async (req, res, next) => {
+    try {
+        res.locals = {
+            config: config
+        };
+        next();
+    } catch (error) {
+        console.error(error);
+        next(error);
+    }
+});
+
 
 // Route برای ارسال ایمیل
 app.post('/send-email', async (req, res) => {
@@ -31,15 +43,15 @@ app.post('/send-email', async (req, res) => {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: "ahzareniabizz@gmail.com",
-            pass: "ehxb fkql ekix ghdy"
+            user: process.env.MYEMAIL,
+            pass: process.env.PASSWORDEMAIL
         }
     });
 
     // تنظیمات ایمیل
     let mailOptions = {
         from: email,
-        to: "ahzareniabizz@gmail.com", // ایمیل مقصد (همان ایمیل شما)
+        to: process.env.MYEMAIL, // ایمیل مقصد (همان ایمیل شما)
         subject: subject,
         text: `
             نام: ${name}
