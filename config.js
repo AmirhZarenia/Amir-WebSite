@@ -1,5 +1,5 @@
 module.exports = {
     port: 3000,
     debug: false,
-    Domain: 'http://localhost:3000'
+    Domain: 'https://amir-website.onrender.com'
 }
